@@ -7541,7 +7541,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">aif360</span>
@@ -7581,6 +7581,16 @@ a.anchor-link {
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>AIF360 version: 0.6.1
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>/opt/homebrew/Caskroom/miniforge/base/envs/aif360/lib/python3.11/site-packages/inFairness/utils/ndcg.py:37: FutureWarning: We've integrated functorch into PyTorch. As the final step of the integration, `functorch.vmap` is deprecated as of PyTorch 2.0 and will be deleted in a future version of PyTorch &gt;= 2.3. Please use `torch.vmap` instead; see the PyTorch 2.0 release notes and/or the `torch.func` migration guide for more details https://pytorch.org/docs/main/func.migrating.html
+  vect_normalized_discounted_cumulative_gain = vmap(
+/opt/homebrew/Caskroom/miniforge/base/envs/aif360/lib/python3.11/site-packages/inFairness/utils/ndcg.py:48: FutureWarning: We've integrated functorch into PyTorch. As the final step of the integration, `functorch.vmap` is deprecated as of PyTorch 2.0 and will be deleted in a future version of PyTorch &gt;= 2.3. Please use `torch.vmap` instead; see the PyTorch 2.0 release notes and/or the `torch.func` migration guide for more details https://pytorch.org/docs/main/func.migrating.html
+  monte_carlo_vect_ndcg = vmap(vect_normalized_discounted_cumulative_gain, in_dims=(0,))
 </pre>
 </div>
 </div>
@@ -7632,7 +7642,7 @@ a.anchor-link {
 </li>
 </ul>
 <h4 id="Dataset-2"><strong>Dataset 2</strong><a class="anchor-link" href="#Dataset-2">¶</a></h4><ul>
-<li><p><strong>ce (Gender):</strong> 0.04890350877192978</p>
+<li><p><strong>Statistical Parity Difference (Gender):</strong> 0.04890350877192978</p>
 </li>
 <li><p><strong>Disparate Impact (Gender):</strong> 1.1096901131333003</p>
 </li>
@@ -7667,7 +7677,7 @@ In both datasets, younger participants tend to have a lower prevalence of label 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [121]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Read the CSV file into a pandas DataFrame</span>
@@ -7771,7 +7781,7 @@ Student Depression Dataset:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [122]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Read the CSV file into a pandas DataFrame</span>
@@ -7930,7 +7940,7 @@ Student Depression Dataset:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [123]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">dataset_student_depression_gender</span> <span class="o">=</span> <span class="n">BinaryLabelDataset</span><span class="p">(</span>
@@ -8015,7 +8025,7 @@ Over 26 to Under 26 Ratio: 1.0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [124]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#print(df_meantal_health['Gender'].unique()) </span>
@@ -8106,7 +8116,7 @@ Over 22 to Under 22 Ratio: 1.570694087403599
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [125]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#print(df_meantal_health['Gender'].unique()) </span>
@@ -8225,8 +8235,6 @@ Augments the dataset with synthetic samples to balance <strong>Gender</strong> d
 <h3 id="Analysis-of-Mitigation-Results"><strong>Analysis of Mitigation Results</strong><a class="anchor-link" href="#Analysis-of-Mitigation-Results">¶</a></h3><h4 id="Dataset-1-(Age-Bias-with-Reweighing)"><strong>Dataset 1 (Age Bias with Reweighing)</strong><a class="anchor-link" href="#Dataset-1-(Age-Bias-with-Reweighing)">¶</a></h4><ul>
 <li><p><strong>Key Reweighing Outputs:</strong></p>
 <ul>
-<li>Privileged (Age &lt; 26) Weight Sample for each datapoint: <strong>0.84563758</strong></li>
-<li>Unprivileged (Age ≥ 26) Weight Sample for each datapoint: <strong>0.84459459</strong></li>
 <li>Mean Weight (Age &lt; 26): <strong>1.0</strong></li>
 <li>Mean Weight (Age ≥ 26): <strong>1.0</strong></li>
 </ul>
@@ -8251,7 +8259,7 @@ Augments the dataset with synthetic samples to balance <strong>Gender</strong> d
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [126]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Assuming dataset_student_depression is your BinaryLabelDataset,</span>
@@ -8261,8 +8269,8 @@ Augments the dataset with synthetic samples to balance <strong>Gender</strong> d
 
 <span class="c1">#Check the assigned weights</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Transformed Dataset (Age Bias Mitigated):"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">" Weights for privileged (Age &lt; 26):"</span><span class="p">,</span> <span class="n">dataset_student_depression_age_transf</span><span class="o">.</span><span class="n">instance_weights</span><span class="p">[</span><span class="n">df_student_depression</span><span class="p">[</span><span class="s1">'Age_Category'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">][:</span><span class="mi">1</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">" Weights for unprivileged (Age &gt;= 26):"</span><span class="p">,</span> <span class="n">dataset_student_depression_age_transf</span><span class="o">.</span><span class="n">instance_weights</span><span class="p">[</span><span class="n">df_student_depression</span><span class="p">[</span><span class="s1">'Age_Category'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">][:</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">" Weights for privileged (Age &lt; 26):"</span><span class="p">,</span> <span class="n">dataset_student_depression_age_transf</span><span class="o">.</span><span class="n">instance_weights</span><span class="p">[</span><span class="n">df_student_depression</span><span class="p">[</span><span class="s1">'Age_Category'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">][:</span><span class="mi">10</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">" Weights for unprivileged (Age &gt;= 26):"</span><span class="p">,</span> <span class="n">dataset_student_depression_age_transf</span><span class="o">.</span><span class="n">instance_weights</span><span class="p">[</span><span class="n">df_student_depression</span><span class="p">[</span><span class="s1">'Age_Category'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">][:</span><span class="mi">10</span><span class="p">])</span>
 
 <span class="c1"># For demonstration purposes, let's calculate the mean weight for each group</span>
 <span class="c1"># To see if they are approximately equal</span>
@@ -8284,8 +8292,10 @@ Augments the dataset with synthetic samples to balance <strong>Gender</strong> d
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>Transformed Dataset (Age Bias Mitigated):
- Weights for privileged (Age &lt; 26): [0.84563758]
- Weights for unprivileged (Age &gt;= 26): [0.84459459]
+ Weights for privileged (Age &lt; 26): [0.84563758 1.2254902  0.84563758 0.84563758 0.84563758 0.84563758
+ 0.84563758 0.84563758 0.84563758 1.2254902 ]
+ Weights for unprivileged (Age &gt;= 26): [0.84459459 0.84459459 0.84459459 1.22330097 0.84459459 1.22330097
+ 1.22330097 1.22330097 1.22330097 0.84459459]
 Mean weight for privileged (Age &lt; 26): 1.0000000000000002
 Mean weight for unprivileged (Age &gt;= 26): 1.0
 </pre>
@@ -8298,7 +8308,7 @@ Mean weight for unprivileged (Age &gt;= 26): 1.0
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [127]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">imblearn.over_sampling</span><span class="w"> </span><span class="kn">import</span> <span class="n">SMOTE</span>
@@ -8384,7 +8394,7 @@ Name: count, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [128]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Redo the analysis for Dataset 2</span>
@@ -8544,7 +8554,7 @@ If fairness across countries or genders is a priority, techniques such as <stron
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [129]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Add a 'Country' column to each dataset</span>
@@ -8602,10 +8612,12 @@ If fairness across countries or genders is a priority, techniques such as <stron
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Prepare the data</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
+
+<span class="c1"># Prepare the data</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">df_combined</span><span class="p">[[</span><span class="s1">'Gender'</span><span class="p">,</span> <span class="s1">'Age_Category'</span><span class="p">,</span> <span class="s1">'Country'</span><span class="p">,</span> <span class="s2">"Stress"</span><span class="p">,</span> <span class="s2">"Study Hours"</span><span class="p">]]</span>  <span class="c1"># Features</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">df_combined</span><span class="p">[</span><span class="s1">'Depression'</span><span class="p">]</span>  <span class="c1"># Target variable</span>
 
@@ -8634,7 +8646,7 @@ If fairness across countries or genders is a priority, techniques such as <stron
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>' # Evaluate the model\naccuracy = accuracy_score(y_test, y_pred)\nprint("Accuracy:", accuracy)\nprint("Classification Report:")\nprint(classification_report(y_test, y_pred)) '</pre>
 </div>
@@ -8646,7 +8658,7 @@ If fairness across countries or genders is a priority, techniques such as <stron
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [130]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">y_outcome</span> <span class="o">=</span> <span class="n">y_test</span>  <span class="c1"># observed decisions</span>
@@ -8708,7 +8720,7 @@ If fairness across countries or genders is a priority, techniques such as <stron
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [131]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">y_outcome</span> <span class="o">=</span> <span class="n">y_test</span>  <span class="c1"># observed decisions</span>
